@@ -1,0 +1,10 @@
+package com.corrtec.MavenProject;
+
+public class MediaTak implements MobileProcessor {
+
+	public void process() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

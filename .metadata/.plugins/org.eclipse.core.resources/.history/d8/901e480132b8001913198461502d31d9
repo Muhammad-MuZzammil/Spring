@@ -1,0 +1,21 @@
+package com.corrtec.MavenProject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Samsung {
+	@Autowired
+	MobileProcessor cpu;
+
+	public void config() {
+		System.out.println("Octa Core, 12GB RAM, 12 MP Camera");
+		cpu.process();
+	}
+
+	public MobileProcessor getCpu() {
+		return cpu;
+	}
+
+	public void setCpu(MobileProcessor cpu) {
+		this.cpu = cpu;
+	}
+}

@@ -1,0 +1,28 @@
+package com.corrtec.MavenProject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car implements Vehicle{
+	@Autowired
+	private Tyer tyre;
+	
+	
+	
+	public Tyer getTyre() {
+		return tyre;
+	}
+
+
+
+	public void setTyre(Tyer tyre) {
+		this.tyre = tyre;
+	}
+
+
+
+	public void drive() {
+		System.out.println("car run fast");
+	}
+}
